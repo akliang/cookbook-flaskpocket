@@ -1,0 +1,17 @@
+# Cookbook Flaskpocket Dev Tool
+
+Executes curl commands so you don't have to manage such long and awkward commands
+
+Some commands require you to export a few environmental variables (IDENTITY, PASSWORD, TOKEN, USERID, or RECORDID) before running it.  Check the `Makefile` for hints about which variables are required for which commands.
+
+`make` commands that start with a `p` interact directly with the pocketbase layer.  Non-`p` commands interact with the Flask layer
+
+A non-exhaustive list of `make` commands (check the `Makefile` for definitive list)
+```
+make plogin
+made padd
+make pedit
+make pview
+make plist
+make pdelete
+```
